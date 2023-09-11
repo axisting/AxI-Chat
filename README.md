@@ -33,4 +33,4 @@ Projenin kurulumu ve çalıştırılması için gerekli adımlar şunlardır:
 - Http kütüphanesi ise, internetten veri alışverişi yaparken HTTPS protokolünü kullanır, bu da verilerinizi şifreleyerek sunucu ile aranızda güvenli bir bağlantı kurar. Bu sayede, verilerinizin dinlenmesini veya değiştirilmesini önler.
 - Bu proje, chatbot servisi sağlayıcısından aldığı API anahtarını da gizli tutar ve projenin lib/constants.dart dosyasında belirtilen yere yapıştırır. Bu sayede, chatbot servisine erişiminizi kontrol eder ve kötüye kullanılmasını engeller.
 
-! [Reload ChatGPT Case] (https://github.com/axisting/Flutter-Case-ChatGPT-Client/blob/main/assets/images/app_icon.png)
+! [Reload ChatGPT Case] (https://media.discordapp.net/attachments/828387941327044608/1150924124240220180/app_icon.png)
