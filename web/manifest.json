@@ -1,6 +1,6 @@
 {
-    "name": "chatgpt_flutter_case",
-    "short_name": "chatgpt_flutter_case",
+    "name": "test",
+    "short_name": "test",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.chatgpt_flutter_case">
-    <application
-        android:label="chatgpt_flutter_case"
+    package="com.example.test">
+   <application
+        android:label="Reload ChatGPT"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
