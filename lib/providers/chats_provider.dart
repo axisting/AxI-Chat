@@ -14,24 +14,26 @@ class ChatProvider with ChangeNotifier {
   }
 
   String id = "";
-
+  // * User'dan gelen mesajı alır ve ona index Atar. API için sınıf formatına getirir
   void addUserMessage({required String msg}) {
     chatList.add(ChatModel(msg: msg, chatIndex: 0));
     notifyListeners();
   }
 
+  // * Providerdaki tüm değişkenleri setler
   setChatProvider(ChatGroupModel newChatGroup) {
     chatList = newChatGroup.chatList;
     chatGroup = newChatGroup;
     id = newChatGroup.id;
   }
 
+  // * Providerdaki tüm değişkenleri resetler
   resetChatProvider() {
     chatList = [];
     chatGroup = null;
     id = "";
   }
-
+  // * Hive veritabanı için chatGroupu oluşturur.
   Future<void> createNewChatGroup() async {
     var uuid = const Uuid();
     id = uuid.v4();
@@ -39,7 +41,7 @@ class ChatProvider with ChangeNotifier {
     chatGroupRepo.addChatGroup(
         chatGroup: ChatGroupModel(id: id, chatList: chatList));
   }
-
+  // * Hive veritabanı için chatGroupu günceller
   updateNewChatGroup() {
     chatGroup = ChatGroupModel(id: id, chatList: chatList);
     chatGroupRepo.updateChatGroup(
@@ -54,7 +56,7 @@ class ChatProvider with ChangeNotifier {
     notifyListeners();
   }
   */
-
+  // * ChatGPT api için msj gönderimini ve getirimini kontrol eder.
   Future<void> sendMessageAndGetAnswers({
     required String msg,
     required String chosenModelId,
@@ -70,6 +72,7 @@ class ChatProvider with ChangeNotifier {
         modelId: chosenModelId,
       ));
     }
+    // * ChatList'in durumuna göre yeni bir chatGroup açılıp açılmayacağına karar verir ve işlem yapar.
     if (chatList.isNotEmpty) {
       if (chatList.length == 2) {
         if (id == "") {

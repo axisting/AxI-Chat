@@ -8,6 +8,7 @@ import 'package:chatgpt_reload_case/providers/models_provider.dart';
 import 'package:chatgpt_reload_case/route_generator.dart';
 import 'package:chatgpt_reload_case/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'package:hive_flutter/adapters.dart';
 import 'package:provider/provider.dart';
@@ -19,16 +20,24 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 void main() async {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
-
+// * Ekranın dönmesini engelle !
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
+// * Hive gerekli setlemeleri ve adapterleri ekle
   await Hive.initFlutter();
   Hive.registerAdapter(ChatModelAdapter());
   Hive.registerAdapter(ChatGroupModelAdapter());
   Hive.registerAdapter(ModelsModelAdapter());
-  Box<ChatModel> boxChat= await Hive.openBox('chatBox');
-  // * Chat geçmişi telefonda tutulacağı için 
-  Box<ChatGroupModel> boxGroup = await Hive.openBox('chatGroupBox',encryptionCipher: HiveAesCipher(HIVE_KEY));
+  Box<ChatModel> boxChat = await Hive.openBox('chatBox');
+  // !  Chat geçmişi telefonda tutulacağı için chatGroup şifrelendi.
+  // * Diğer box'lar şimdilik kayıt için kullanılmadığı için şifrelenmedi
+  Box<ChatGroupModel> boxGroup = await Hive.openBox('chatGroupBox',
+      encryptionCipher: HiveAesCipher(HIVE_KEY));
   Box<ModelsModel> boxModels = await Hive.openBox('modelsBox');
-  
+  // * dotenv kütüphanesi ile .env dosya oluşturup Key'imizi güvenli bir yerde saklıyoruz.
+  // * Uygulamaya kendi keyinizi eklemek için constants.dart dosyasından API Key için yönelgeleri izleyin
   await dotenv.load(fileName: ".env");
 
   runApp(const MyApp());
@@ -54,6 +63,7 @@ class MyApp extends StatelessWidget {
         title: 'Reload.Case',
         debugShowCheckedModeBanner: false,
         onGenerateRoute: RouteGenerator.routeGenerator,
+
         theme: ThemeData(
             fontFamily: 'SFPro',
             scaffoldBackgroundColor: scaffoldBackgroundColor,
