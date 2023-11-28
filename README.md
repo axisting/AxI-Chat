@@ -1,4 +1,4 @@
-# Reload ChatGPT
+# AxI Chat with ChatGPT API
 
 Kullanıcılar, chatbot ile metin göndererek iletişim kurabilirler.
 Chatbot, kullanıcının dilini otomatik olarak algılar ve ona uygun bir şekilde yanıt verir.
@@ -11,11 +11,11 @@ Chatbot, kullanıcıya yazma, yeniden yazma, iyileştirme veya optimizasyon gibi
 Projenin kurulumu ve çalıştırılması için gerekli adımlar şunlardır:
 
 - Flutter SDK’nın indirilmesi ve kurulması.
-- Projeyi GitHub’dan klonlamak veya indirmek. -> git clone https://github.com/axisting/Flutter-Case-ChatGPT-Client.git
+- Projeyi GitHub’dan klonlamak veya indirmek. -> git clone https://github.com/axisting/axichat.git
 - Projeyi bir IDE’de (örneğin Visual Studio Code) açmak ve gerekli bağımlılıkları yüklemek.
-- Bir chatbot servisi sağlayıcısından (örneğin OpenAI) bir API anahtarı almak ve projenin lib/constants/api_consts.dart dosyasında belirtilen yere yapıştırmak. lib/constants/api_consts.dart dosyasında gerekli ekstra talimatlar bulunmaktadır.
+- Bir chatbot servisi sağlayıcısından (örneğin **OpenAI**) bir **API anahtarı** almak ve projenin **lib/constants/api_consts.dart** dosyasında belirtilen yere yapıştırmak. lib/constants/api_consts.dart dosyasında gerekli ekstra talimatlar bulunmaktadır.
 
-- Bir Android veya iOS cihazda veya emülatörde projeyi çalıştırmak.
+- Bir **Android veya iOS** cihazda veya emülatörde projeyi çalıştırmak.
 
 ## İşlevsellik
 
@@ -33,10 +33,10 @@ Projenin kurulumu ve çalıştırılması için gerekli adımlar şunlardır:
 - Http kütüphanesi ise, internetten veri alışverişi yaparken HTTPS protokolünü kullanır, bu da verilerinizi şifreleyerek sunucu ile aranızda güvenli bir bağlantı kurar. Bu sayede, verilerinizin dinlenmesini veya değiştirilmesini önler.
 - Bu proje, chatbot servisi sağlayıcısından aldığı API anahtarını da gizli tutar ve projenin lib/constants.dart dosyasında belirtilen yere yapıştırır. Bu sayede, chatbot servisine erişiminizi kontrol eder ve kötüye kullanılmasını engeller.
 
-<<<<<<< HEAD
+
 ## Son güncellemeler 
 
 - AndroidManifest.xml dosyasında release mod için internet izni verildi.
-=======
->>>>>>> 4fb35c714291a8e858414f32c40f0d16b1e18b25
+
+
 
