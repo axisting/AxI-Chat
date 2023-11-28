@@ -2,9 +2,9 @@ import 'dart:convert';
 import 'dart:developer';
 import 'dart:io';
 
-import 'package:chatgpt_reload_case/constants/api_consts.dart';
-import 'package:chatgpt_reload_case/models/chat_model.dart';
-import 'package:chatgpt_reload_case/models/models_model.dart';
+import 'package:axi_chat/constants/api_consts.dart';
+import 'package:axi_chat/models/chat_model.dart';
+import 'package:axi_chat/models/models_model.dart';
 import 'package:http/http.dart' as http;
 
 class ApiService {

@@ -1,12 +1,12 @@
 // ignore_for_file: unused_local_variable
 
-import 'package:chatgpt_reload_case/constants/api_consts.dart';
-import 'package:chatgpt_reload_case/models/chat_group_model.dart';
-import 'package:chatgpt_reload_case/models/chat_model.dart';
-import 'package:chatgpt_reload_case/models/models_model.dart';
-import 'package:chatgpt_reload_case/providers/models_provider.dart';
-import 'package:chatgpt_reload_case/route_generator.dart';
-import 'package:chatgpt_reload_case/screens/welcome_screen.dart';
+import 'package:axi_chat/constants/api_consts.dart';
+import 'package:axi_chat/models/chat_group_model.dart';
+import 'package:axi_chat/models/chat_model.dart';
+import 'package:axi_chat/models/models_model.dart';
+import 'package:axi_chat/providers/models_provider.dart';
+import 'package:axi_chat/route_generator.dart';
+import 'package:axi_chat/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

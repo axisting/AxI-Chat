@@ -1,7 +1,7 @@
 // ignore_for_file: non_constant_identifier_names
 
-import 'package:chatgpt_reload_case/constants/api_consts.dart';
-import 'package:chatgpt_reload_case/models/chat_group_model.dart';
+import 'package:axi_chat/constants/api_consts.dart';
+import 'package:axi_chat/models/chat_group_model.dart';
 import 'package:hive/hive.dart';
 
 abstract class BaseChatGroupRepository {

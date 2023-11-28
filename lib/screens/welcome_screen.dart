@@ -4,7 +4,7 @@ We’ve trained a model called ChatGPT which interacts in a conversational way.
 
 */
 
-import 'package:chatgpt_reload_case/services/assets_manager.dart';
+import 'package:axi_chat/services/assets_manager.dart';
 import 'package:flutter/material.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -15,13 +15,15 @@ class WelcomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
+
         backgroundColor: Colors.black,
+        centerTitle: true,
         title: Center(
           child: Padding(
             padding: const EdgeInsets.all(64.0),
             child: Image.asset(
               AssetsManager.smallLogo,
-              height: 14,
+              height: 18,
             ),
           ),
         ),

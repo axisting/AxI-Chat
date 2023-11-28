@@ -1,9 +1,9 @@
-import 'package:chatgpt_reload_case/main.dart';
-import 'package:chatgpt_reload_case/models/chat_group_model.dart';
-import 'package:chatgpt_reload_case/screens/chat_screen.dart';
-import 'package:chatgpt_reload_case/screens/error_screen.dart';
-import 'package:chatgpt_reload_case/screens/saved_chats_screen.dart';
-import 'package:chatgpt_reload_case/screens/welcome_screen.dart';
+import 'package:axi_chat/main.dart';
+import 'package:axi_chat/models/chat_group_model.dart';
+import 'package:axi_chat/screens/chat_screen.dart';
+import 'package:axi_chat/screens/error_screen.dart';
+import 'package:axi_chat/screens/saved_chats_screen.dart';
+import 'package:axi_chat/screens/welcome_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';

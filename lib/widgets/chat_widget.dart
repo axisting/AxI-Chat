@@ -1,6 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:chatgpt_reload_case/constants/constants.dart';
-import 'package:chatgpt_reload_case/services/assets_manager.dart';
+import 'package:axi_chat/constants/constants.dart';
+import 'package:axi_chat/services/assets_manager.dart';
 import 'package:flutter/material.dart';
 
 import 'text_widget.dart';

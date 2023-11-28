@@ -1,4 +1,4 @@
-import 'package:chatgpt_reload_case/models/chat_group_model.dart';
+import 'package:axi_chat/models/chat_group_model.dart';
 import 'package:hive/hive.dart';
 
 // * Hive Box'ların getirme işlemi. 

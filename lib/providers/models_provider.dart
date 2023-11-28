@@ -1,5 +1,5 @@
-import 'package:chatgpt_reload_case/models/models_model.dart';
-import 'package:chatgpt_reload_case/services/api_service.dart';
+import 'package:axi_chat/models/models_model.dart';
+import 'package:axi_chat/services/api_service.dart';
 import 'package:flutter/cupertino.dart';
 
 class ModelsProvider with ChangeNotifier {

@@ -1,5 +1,5 @@
-import 'package:chatgpt_reload_case/models/chat_group_model.dart';
-import 'package:chatgpt_reload_case/repositories/chat_repository.dart';
+import 'package:axi_chat/models/chat_group_model.dart';
+import 'package:axi_chat/repositories/chat_repository.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:uuid/uuid.dart';
 import '../models/chat_model.dart';

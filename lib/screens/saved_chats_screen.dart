@@ -1,10 +1,10 @@
-import 'package:chatgpt_reload_case/constants/constants.dart';
-import 'package:chatgpt_reload_case/controller/box_controller.dart';
-import 'package:chatgpt_reload_case/models/chat_group_model.dart';
-import 'package:chatgpt_reload_case/providers/chats_provider.dart';
-import 'package:chatgpt_reload_case/repositories/chat_repository.dart';
-import 'package:chatgpt_reload_case/widgets/subtitle_text_widget.dart';
-import 'package:chatgpt_reload_case/widgets/text_widget.dart';
+import 'package:axi_chat/constants/constants.dart';
+import 'package:axi_chat/controller/box_controller.dart';
+import 'package:axi_chat/models/chat_group_model.dart';
+import 'package:axi_chat/providers/chats_provider.dart';
+import 'package:axi_chat/repositories/chat_repository.dart';
+import 'package:axi_chat/widgets/subtitle_text_widget.dart';
+import 'package:axi_chat/widgets/text_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:provider/provider.dart';

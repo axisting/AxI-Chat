@@ -1,6 +1,6 @@
-import 'package:chatgpt_reload_case/constants/constants.dart';
-import 'package:chatgpt_reload_case/providers/chats_provider.dart';
-import 'package:chatgpt_reload_case/services/assets_manager.dart';
+import 'package:axi_chat/constants/constants.dart';
+import 'package:axi_chat/providers/chats_provider.dart';
+import 'package:axi_chat/services/assets_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -20,7 +20,7 @@ class _DrawerMenuState extends State<DrawerMenu> {
           UserAccountsDrawerHeader(
             decoration: const BoxDecoration(color: Colors.black),
             accountName: const Text("Volkan Demir"),
-            accountEmail: const Text("volkan.demir@axisting.com"),
+            accountEmail: const Text("test@axisting.com"),
             currentAccountPicture: CircleAvatar(
               backgroundColor: Colors.black,
               child: Image(image: AssetImage(AssetsManager.userImage)),
@@ -32,7 +32,9 @@ class _DrawerMenuState extends State<DrawerMenu> {
               InkWell(
                 onTap: () {
                   context.read<ChatProvider>().resetChatProvider();
-                  Navigator.pushNamed(context, "/");
+                  //Navigator.pushNamed(context, "/");
+                  // * Eğer bir sayfaya dönmek ve belirtilen sayfaya kadar tüm sayfaları kapatmak için istiyorsan aşağıdaki gibi yapabilirsin.
+                  Navigator.popUntil(context, ModalRoute.withName('/'));
                 },
                 splashColor: Colors.blue.shade200,
                 child: const ListTile(
@@ -43,7 +45,7 @@ class _DrawerMenuState extends State<DrawerMenu> {
               ),
               InkWell(
                 onTap: () {
-                  Navigator.pop(context);
+                  Navigator.popUntil(context, (route) => false);
                 },
                 splashColor: Colors.blue.shade200,
                 child: const ListTile(

@@ -2,12 +2,12 @@
 
 import 'dart:developer';
 
-import 'package:chatgpt_reload_case/constants/constants.dart';
-import 'package:chatgpt_reload_case/models/chat_group_model.dart';
-import 'package:chatgpt_reload_case/providers/chats_provider.dart';
+import 'package:axi_chat/constants/constants.dart';
+import 'package:axi_chat/models/chat_group_model.dart';
+import 'package:axi_chat/providers/chats_provider.dart';
 
-import 'package:chatgpt_reload_case/widgets/chat_widget.dart';
-import 'package:chatgpt_reload_case/widgets/drawer_menu.dart';
+import 'package:axi_chat/widgets/chat_widget.dart';
+import 'package:axi_chat/widgets/drawer_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:provider/provider.dart';

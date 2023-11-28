@@ -1,4 +1,4 @@
-import 'package:chatgpt_reload_case/models/chat_model.dart';
+import 'package:axi_chat/models/chat_model.dart';
 import 'package:hive/hive.dart';
 part 'chat_group_model.g.dart';
 @HiveType(typeId: 1)
