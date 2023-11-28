@@ -1,4 +1,4 @@
-# AxI Chat with ChatGPT API
+# A x I Chat with ChatGPT API
 
 Kullanıcılar, chatbot ile metin göndererek iletişim kurabilirler.
 Chatbot, kullanıcının dilini otomatik olarak algılar ve ona uygun bir şekilde yanıt verir.
